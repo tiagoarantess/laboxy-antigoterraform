@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform - Respire o Futuro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .plant-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm0 0c0 11.046 8.954 20 20 20s20-8.954 20-20-8.954-20-20-20-20 8.954-20 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .form-container {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        /* Removed custom checkbox/radio styles as they are no longer needed */
+        
+        .success-message {
+            display: none; /* This will remain hidden as form submission is removed */
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen gradient-bg plant-pattern">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+            <div class="mb-8">
+                <svg class="w-20 h-20 mx-auto mb-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                    <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="white" opacity="0.8"/>
+                </svg>
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                Respire o Futuro com o <span class="text-yellow-300">Terraform</span>
+            </h1>
+            
+            <!-- YouTube Video -->
+            <div class="max-w-4xl mx-auto mb-8">
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%; height: 0;">
+                    <iframe 
+                        class="absolute inset-0 w-full h-full" 
+                        src="https://www.youtube.com/embed/LrFKRU42FOI?si=cznbkH91tG23xh5b" 
+                        title="Terraform - Purificador de Ar" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Purificador de ar compacto, sustentável, que integra plantas vivas e tecnologia de monitoramento — feito pra escolas, hospitais, mercados e casas.
+            </p>
+            
+            <div class="bg-yellow-300 text-gray-800 px-8 py-4 rounded-full inline-block text-lg font-semibold mb-8">
+                Temos a missão de trazer vida a esse projeto! E vida a você que respira em cidade grande! 
+                Nos apoie com 2 minutos, clique abaixo.
+            </div>
+        </div>
+
+        <!-- Call to Action Button Section -->
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="form-container rounded-2xl p-8 md:p-12 shadow-2xl">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Participe da Pesquisa!</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    Clique no botão abaixo para preencher nosso formulário de validação e nos ajudar a moldar o futuro do Terraform. Sua opinião é muito importante!
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9y_3hMccvgiSu5tBAkpvDKANDSVCAdPAObVd5mOUJkMy18g/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    Preencher Formulário
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Removed all JavaScript related to form submission and dynamic field handling -->
+</body>
+</html>
